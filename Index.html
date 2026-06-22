@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnimeFlix Lite</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎬 AnimeFlix Lite</h1>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search anime..." />
+        <select id="genreFilter">
+          <option value="">All Genres</option>
+          <option value="Action">Action</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Drama">Drama</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Romance">Romance</option>
+          <option value="Sci-Fi">Sci-Fi</option>
+          <option value="Slice of Life">Slice of Life</option>
+          <option value="Sports">Sports</option>
+          <option value="Thriller">Thriller</option>
+        </select>
+      </div>
+    </header>
+
+    <div class="stats" id="stats">Loading...</div>
+
+    <div id="cardGrid" class="card-grid">
+      <div class="loading">⏳ Loading anime...</div>
+    </div>
+
+    <div class="watchlist-section">
+      <h2>⭐ My Watchlist</h2>
+      <div id="watchlistContainer">
+        <p class="empty-state">No anime added yet. Click the ❤️ button on any card!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+  </html>
